@@ -1,6 +1,5 @@
-import { ImageList, ImageListItem, ImageListItemBar, Paper, Button, Typography } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
-import MobileStoreButton from 'react-mobile-store-button'
+import { ImageList, ImageListItem, ImageListItemBar, Button, Typography } from "@mui/material";
+import { Link } from "react-router-dom";
 
 import Navbar from "../components/navbar";
 
@@ -39,7 +38,7 @@ export default function Fynatrack() {
                     Performance? Exceptional. Built with Flutter
                 </Typography>
                 <Button size="small" sx={{'&:hover': {backgroundColor: 'transparent'}}} onClick={() => {window.open(playstoreUrl, '_blank')}}>
-                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width={250}/>
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="" width={250}/>
                 </Button>
                 <Typography sx={{fontSize: 14, fontWeight: 'bold', color: 'grey', mb: 10, mt: 10}}>
                     View our <Link to="/kamisoftware/fynatrack-privacy">Privacy Policy</Link>
