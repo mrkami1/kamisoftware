@@ -9,12 +9,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Routes>
-                <Route exact path='/kamisoftware' element={<Home />}/>
-                <Route exact path='/kamisoftware/contactus' element={<ContactUs />}/>
-                <Route exact path='/kamisoftware/fynatrack' element={<Fynatrack />}/>
-                <Route exact path='/kamisoftware/fynatrack-privacy' element={<FynatrackPrivacy />}/>
+                <Route exact path='/' element={<Home />}/>
+                <Route exact path='/contact-us' element={<ContactUs />}/>
+                <Route exact path='/fynatrack' element={<Fynatrack />}/>
+                <Route exact path='/fynatrack-privacy' element={<FynatrackPrivacy />}/>
             </Routes>
         </BrowserRouter>
     </div>
