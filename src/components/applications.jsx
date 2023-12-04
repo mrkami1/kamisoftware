@@ -19,7 +19,7 @@ export default function Applications() {
 
     const GoToApplication = (id) => {
         switch(id) {
-            case 'fynatrack': navigate('/fynatrack'); break;
+            case 'fynatrack': navigate('/kamisoftware/fynatrack'); break;
             default: break;
         }
     }

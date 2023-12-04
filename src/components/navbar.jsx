@@ -12,7 +12,7 @@ export default function Navbar() {
     return (
         <AppBar position='sticky' sx={{background: '#2e2e2e'}}>
             <Toolbar>
-                <IconButton onClick={() => navigate('/')}>
+                <IconButton onClick={() => navigate('/kamisoftware')}>
                     <img src={KamiIcon} width={35} height={35} alt='icon'/>
                 </IconButton>
                 <Typography sx={{
@@ -27,7 +27,7 @@ export default function Navbar() {
                     size='medium' 
                     variant='contained'
                     sx={{marginLeft: 'auto', color: 'white', fontWeight: 'bold'}}
-                    onClick={() => navigate('/contactus')}
+                    onClick={() => navigate('/kamisoftware/contactus')}
                 >
                     contact us
                 </Button>

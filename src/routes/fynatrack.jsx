@@ -17,9 +17,6 @@ const images = [
 const playstoreUrl = 'https://play.google.com/store/apps/details?id=com.kamisoftware.fynatrack&hl=en&gl=US'
 
 export default function Fynatrack() {
-
-    const navigate = useNavigate();
-
     return (
         <div>
             <Navbar />
@@ -45,7 +42,7 @@ export default function Fynatrack() {
                     <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" width={250}/>
                 </Button>
                 <Typography sx={{fontSize: 14, fontWeight: 'bold', color: 'grey', mb: 10, mt: 10}}>
-                    View our <Link to="/fynatrack-privacy">Privacy Policy</Link>
+                    View our <Link to="/kamisoftware/fynatrack-privacy">Privacy Policy</Link>
                 </Typography>
             </div>
         </div>

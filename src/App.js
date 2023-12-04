@@ -11,10 +11,10 @@ function App() {
     <div className="App">
         <BrowserRouter>
             <Routes>
-                <Route exact path='/' element={<Home />}/>
-                <Route exact path='/contactus' element={<ContactUs />}/>
-                <Route exact path='/fynatrack' element={<Fynatrack />}/>
-                <Route exact path='/fynatrack-privacy' element={<FynatrackPrivacy />}/>
+                <Route exact path='/kamisoftware' element={<Home />}/>
+                <Route exact path='/kamisoftware/contactus' element={<ContactUs />}/>
+                <Route exact path='/kamisoftware/fynatrack' element={<Fynatrack />}/>
+                <Route exact path='/kamisoftware/fynatrack-privacy' element={<FynatrackPrivacy />}/>
             </Routes>
         </BrowserRouter>
     </div>
