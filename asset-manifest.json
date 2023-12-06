@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e40eeb6b.css",
-    "main.js": "/static/js/main.f84c5048.js",
+    "main.js": "/static/js/main.445bf4eb.js",
     "static/js/787.fded4a77.chunk.js": "/static/js/787.fded4a77.chunk.js",
     "static/media/fynatrack_dash.png": "/static/media/fynatrack_dash.18b55d0329dae769ffa5.png",
     "static/media/fynatrack_export.png": "/static/media/fynatrack_export.9ad157bbc743d06de113.png",
@@ -9,11 +9,11 @@
     "static/media/KamiSoftwareIcon.svg": "/static/media/KamiSoftwareIcon.4988f2b139797fc0f1c10114293dce62.svg",
     "index.html": "/index.html",
     "main.e40eeb6b.css.map": "/static/css/main.e40eeb6b.css.map",
-    "main.f84c5048.js.map": "/static/js/main.f84c5048.js.map",
+    "main.445bf4eb.js.map": "/static/js/main.445bf4eb.js.map",
     "787.fded4a77.chunk.js.map": "/static/js/787.fded4a77.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e40eeb6b.css",
-    "static/js/main.f84c5048.js"
+    "static/js/main.445bf4eb.js"
   ]
 }
