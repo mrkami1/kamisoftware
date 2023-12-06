@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.e40eeb6b.css",
-    "main.js": "/static/js/main.ca842877.js",
+    "main.js": "/static/js/main.a7d5d5e6.js",
     "static/js/787.fded4a77.chunk.js": "/static/js/787.fded4a77.chunk.js",
+    "static/media/fynatrack_dash.png": "/static/media/fynatrack_dash.18b55d0329dae769ffa5.png",
     "static/media/fynatrack_export.png": "/static/media/fynatrack_export.9ad157bbc743d06de113.png",
     "static/media/fynatrack_backup.png": "/static/media/fynatrack_backup.05987f9930035b546056.png",
-    "static/media/fynatrack_dash.jpg": "/static/media/fynatrack_dash.476bbc06feb371b8bcb7.jpg",
     "static/media/KamiSoftwareIcon.svg": "/static/media/KamiSoftwareIcon.4988f2b139797fc0f1c10114293dce62.svg",
     "index.html": "/index.html",
     "main.e40eeb6b.css.map": "/static/css/main.e40eeb6b.css.map",
-    "main.ca842877.js.map": "/static/js/main.ca842877.js.map",
+    "main.a7d5d5e6.js.map": "/static/js/main.a7d5d5e6.js.map",
     "787.fded4a77.chunk.js.map": "/static/js/787.fded4a77.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e40eeb6b.css",
-    "static/js/main.ca842877.js"
+    "static/js/main.a7d5d5e6.js"
   ]
 }
