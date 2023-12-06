@@ -1,5 +1,6 @@
+import { ContentCopy } from "@mui/icons-material";
 import Navbar from "../components/navbar";
-import { Typography, Card, CardContent, Button, Snackbar, Alert } from "@mui/material";
+import { Typography, Card, CardContent, Snackbar, Alert, Box, IconButton } from "@mui/material";
 import { useState } from "react";
 
 export default function ContactUs() {
@@ -20,7 +21,7 @@ export default function ContactUs() {
         <div>
             <Navbar />
             <div>
-                <Card variant="outlined" sx={{ maxWidth: '50%', m: 'auto', mt: 5, backgroundColor: '#4a4a4a' }}>
+                <Card variant="outlined" sx={{ m: 5, backgroundColor: '#4a4a4a' }}>
                     <CardContent>
                         <Typography sx={{ fontSize: 48, fontWeight: 'bold', color: 'white' }} gutterBottom>
                             Get in touch with us
@@ -28,10 +29,13 @@ export default function ContactUs() {
                         <Typography sx={{ fontSize: 32, fontWeight: 'bold', color: 'whitesmoke' }} gutterBottom>
                             We'll build anything.
                         </Typography>
-                        <Button size="large" variant="contained" sx={{ mt: 5, color: 'white' }} onClick={() => handleClick(false)}>
+                        <Box sx={{wordWrap: 'break-word', color: 'white'}}>
+                            <IconButton sx={{color: 'white'}} onClick={() => handleClick(false)}>
+                                <ContentCopy />
+                            </IconButton>
                             kamisoftwaredev@gmail.com
-                        </Button>
-                        <Snackbar open={open} onClose={() => handleClick(true)} autoHideDuration={4000}>
+                        </Box>
+                        <Snackbar open={open} onClose={() => handleClick(true)} autoHideDuration={4000} anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}>
                             <Alert severity="success" onClose={() => handleClick(true)}>Copied email to clipboard!</Alert>
                         </Snackbar>
                     </CardContent>

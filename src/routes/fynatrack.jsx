@@ -1,4 +1,4 @@
-import { ImageList, ImageListItem, ImageListItemBar, Button, Typography, Box, useMediaQuery } from "@mui/material";
+import { ImageList, ImageListItem, Button, Typography, Box, useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import Navbar from "../components/navbar";
@@ -33,7 +33,7 @@ export default function Fynatrack() {
                     <ImageList cols={matches ? 3 : 1} gap={10}>
                         {images.map((image) => (
                             <ImageListItem key={image.img} sx={{m: 'auto', maxWidth: 400}}>
-                                <img src={image.img} />
+                                <img src={image.img} alt=""/>
                             </ImageListItem>
                         ))}
                     </ImageList>
