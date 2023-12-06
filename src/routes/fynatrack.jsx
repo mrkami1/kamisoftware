@@ -1,9 +1,9 @@
-import { ImageList, ImageListItem, ImageListItemBar, Button, Typography } from "@mui/material";
+import { ImageList, ImageListItem, ImageListItemBar, Button, Typography, Box, useMediaQuery } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import Navbar from "../components/navbar";
 
-import fynatrackDash from '../assets/fynatrack/fynatrack_dash.jpg'
+import fynatrackDash from '../assets/fynatrack/fynatrack_dash.png'
 import fynatrackBackup from '../assets/fynatrack/fynatrack_backup.png'
 import fynatrackExport from '../assets/fynatrack/fynatrack_export.png'
 
@@ -16,25 +16,34 @@ const images = [
 const playstoreUrl = 'https://play.google.com/store/apps/details?id=com.kamisoftware.fynatrack&hl=en&gl=US'
 
 export default function Fynatrack() {
+    
+    const matches = useMediaQuery('(min-width: 750px)');
+    
     return (
         <div>
             <Navbar />
             <div>
-                <Typography sx={{fontSize: 48, fontWeight: 'bold', color: 'white', mt: 5}}>
+                <Typography sx={{fontSize: 48, fontWeight: 'bold', color: 'white', mt: 5, mr: 5, ml: 5}}>
                     Fynatrack Mobile App
                 </Typography>
-                <Typography sx={{fontSize: 24, fontWeight: 'bold', color: 'grey', mb: 5}}>
+                <Typography sx={{fontSize: 24, fontWeight: 'bold', color: 'grey', mb: 5, mr: 5, ml: 5}}>
                     Always keep up to date with your latest transactions
                 </Typography>
-                <ImageList cols={3} sx={{ml: 50, mr: 50}}>
-                    {images.map((image) => (
-                        <ImageListItem key={image.img} sx={{objectFit: 'contain', m: 2}}>
-                            <img src={image.img} alt="app img" loading="lazy"/>
-                            <ImageListItemBar title={image.description} position="below" sx={{color: 'white'}}/>
-                        </ImageListItem>
-                    ))}
-                </ImageList>
-                <Typography sx={{fontSize: 24, fontWeight: 'bold', color: 'grey', mb: 5}}>
+                <Box sx={{m: 10}}>
+                    <ImageList cols={matches ? 3 : 1} gap={10}>
+                        {images.map((image) => (
+                            <ImageListItem key={image.img} sx={{m: 'auto', maxWidth: 400}}>
+                                <img src={image.img} />
+                            </ImageListItem>
+                        ))}
+                    </ImageList>
+                </Box>
+                <Typography sx={{fontSize: 18, fontWeight: 'bold', color: 'white', m: 5}}>
+                    <p>Easily create, manage, or track transactions</p>
+                    <p>Backup your data to Google Drive or to your device</p>
+                    <p>Export/Import your data using the JSON file format</p>
+                </Typography>
+                <Typography sx={{fontSize: 24, fontWeight: 'bold', color: 'grey', m: 5}}>
                     Performance? Exceptional. Built with Flutter
                 </Typography>
                 <Button size="small" sx={{'&:hover': {backgroundColor: 'transparent'}}} onClick={() => {window.open(playstoreUrl, '_blank')}}>
